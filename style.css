@@ -1,0 +1,670 @@
+body { 
+    background: #2D2A48 !important;
+    font-size: 13px; 
+}
+.clasic_btn_MONAT {
+    backdrop-filter: blur(8px);
+    border: 1px solid #ffffff54;
+    background: #2f284bad;
+    padding: 1.2em;
+    border-radius: 2px !important;
+    font-size: 0.9em !important;
+}
+#scrollBtnContainer {
+    position: fixed;
+    bottom: 0;
+    max-height: 0;
+    width: 100%;
+    z-index: 1;
+    transition: all .25s ease-in-out;
+    display: flex;
+    overflow: hidden;
+}
+#scrollBtnContainer.active {
+    max-height: 50em;
+    padding-bottom: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
+    z-index: 20;
+}
+#smooth-wrapper {
+    overflow-x: hidden;
+    background-color: #fff;
+}
+.surveyor_book_pro_title {
+    font-size: clamp(3em, 6vw, 7em) !important;
+}
+
+/* ---------- /litebox ---------- */
+
+/*Overlay*/
+
+.lbxp>div:first-child {
+    background-color: rgb(45 42 74 / 90%) !important;
+    opacity: 0.8 !important;
+}
+
+/*Gallery container*/
+.lbxp>div:nth-child(2) {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Pagination*/
+.lbxp>div:nth-child(3) {
+    inset: auto auto 16% 50% !important;
+}
+
+.lbxp>div:nth-child(3) svg {
+    transition: all 200ms;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.lbxp>div:nth-child(3) svg circle {
+    visibility: hidden;
+}
+
+.lbxp>div:nth-child(3) svg.pagerActive {
+    padding: 3px !important;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+
+/*Video and images*/
+
+.lbxp iframe {
+    height: 50vh !important;
+    width: 60vw !important;
+}
+
+/* ---------- litebox/ ---------- */
+
+/* ---------- /Header ---------- */
+header {
+    z-index: 10;
+    position: fixed;
+    padding: 2em;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(180deg, rgb(45 42 72 / 61%) 0%, rgb(64 57 108 / 23%) 100%);
+    backdrop-filter: blur(8px);
+    transition: all .25s ease-in-out;
+    transform: translateY(-110%);
+}
+header.active { transform: translateY(0); }
+header img { width: clamp(10em, 10vw, 13em); }
+
+#flags_dd {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    border: 1px solid #a59dc9;
+    padding: 4px 4px;
+    border-radius: 3px;
+    max-height: 24px;
+    overflow: hidden;
+    transition: all .25s ease-in-out;
+    cursor: pointer;
+    background: linear-gradient(358deg, rgb(45 42 72 / 4%) 0%, rgb(64 57 108 / 11%) 100%);
+    backdrop-filter: blur(8px);
+}
+
+#flags_dd.active {  max-height: 100px; }
+#flags_dd>a:last-child {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #A59DC9;
+}
+#flags_dd img {
+    width: 18px !important;
+    margin-right: 0.5rem;
+    user-select: none;
+}
+#flags_dd p {
+    color: #fff;
+    font-size: .7em;
+    letter-spacing: 0.1em;
+    user-select: none;
+}
+/* ---------- Header/ ---------- */
+
+/* ---------- /Intro Sec ---------- */
+#welcomeSec {
+    background: linear-gradient(180deg, #2D2A48 17.35%, #064443 100%);
+    position: relative;
+    padding-bottom: 9em;
+}
+#welcomeSec>div>div:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+h1 { color: #fff !important; }
+#gallery_intro>div>img:first-child,
+#gallery_intro>div>img:last-child {
+    width: min(30vw, 350px);
+}
+#gallery_intro>div>img:first-child {
+    max-height: 310px;
+    object-fit: cover;
+}
+#gallery_intro>img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+@keyframes moveArrow {
+    0% {
+        transform: translateY(0px);
+    }
+
+    40% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+#scroll_arrow {
+    margin-top: 30px;
+    width: 50px;
+    animation: moveArrow 1.7s ease-in-out infinite;
+}
+
+/* MONAT SIGNIFIE MODERN NATURE */
+#slogan_title {
+    position: relative;
+    color: #D3FDCE;
+    z-index: 1;
+    margin-top: 2.5em;
+}
+#slogan_title .right{ font-family: 'SurveyorFine-BookItalic-Pro', Fallback, sans-serif !important; }
+
+#slogan_title .underline {
+    height: 2px;
+    width: 35px;
+    background: #D3FDCE;
+    margin: 20px auto 0;
+}
+/* ---------- Intro Sec/ ---------- */
+
+/* ---------- /Revolution Sec ---------- */
+#stroke_date {
+    -webkit-text-stroke-width: .3vw;
+    -webkit-text-stroke-color: #e5ddf5;
+    color: transparent;
+    letter-spacing: 0.02em;
+    font-size: 35vw;
+    line-height: .95;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#revolutionSec {
+    padding: 10em 0 10em;
+    background: linear-gradient(0deg, rgba(245, 246, 255, 1) 100%, rgba(6, 68, 67, 1) 100%);
+}
+/* ---------- Revolution Sec/ ---------- */
+
+/* ---------- /Horizontal Sec ---------- */
+#horizontalSec {
+    background: linear-gradient(0deg, rgba(245, 246, 255, 1) 0%, rgba(6, 68, 67, 1) 50%);
+    transform: translateY(-1px);
+}
+#panels_container {
+    display: flex;
+    padding: 0;
+    height: 70vh;
+    background-color: transparent;
+    margin-left: 25px;
+}
+#panels_container .panel {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    padding: 60px;
+    margin-right: 20px;
+    margin-top: 30px;
+    flex-shrink: 0;
+}
+#panels_container .panel .surveyor_book_pro_subtitle { font-size: clamp(2em, 3.5vw, 3em); }
+#panels_container .panel h2,
+#panels_container .panel p {
+    color: #fff;
+}
+#panels_container .panel h2 { margin: 0; }
+#panels_container .panel p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+#panels_container .panel.text_panel {
+    width: 40vw;
+    min-width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#panels_container .panel.img_panel {
+    width: 30vw;
+    min-width: 440px;
+}
+#panels_container .panel.img1 { background-image: url('https://monatglobal.com/wp-content/uploads/2023/05/become-a-market-partner-min.jpg'); }
+#panels_container .panel.img2 { background-image: url('https://monatglobal.com/wp-content/uploads/2023/05/become-a-European-Founder-min.jpg'); }
+#panels_container .panel.img3 { background-image: url('https://monatglobal.com/wp-content/uploads/2023/05/passport-bahamas-2023-min.jpg'); }
+#panels_container .panel.text1 { background-color: #40386C; }
+#panels_container .panel.text2 { background-color: #2D2A48; }
+#panels_container .panel.text3 { background-color: #235D75; }
+/* ---------- Horizontal Sec/ ---------- */
+
+
+/* ---------- /Ingredients Sec ---------- */
+#ingredientsSec {
+    background-color: #f5f6ff;
+}
+
+#ingredientsSec h3 {
+    margin: 17vh auto;
+    font-size: clamp(2em, 3.5vw, 3em);
+}
+
+#ingredientsSec img {
+    width: 15%;
+    max-width: 260px;
+}
+/* ---------- Ingredients Sec/ ---------- */
+
+
+
+
+/* ---------- /Phenomenon Sec ---------- */
+#phenomenonSec {
+    padding: 15em 0;
+    background-color: #f5f6ff;
+    transform: translateY(-1px);
+}
+#parallax_container {
+    margin-top: 12em;
+    max-width: 1300px;
+}
+#parallax_container>div { width: 47%; }
+.parallax_box {
+    overflow: hidden;
+    position: relative;
+}
+.parallax_box.left {
+    height: 50vw;
+    max-height: 700px;
+}
+.parallax_box.right {
+    height: 40vw;
+    max-height: 500px;
+}
+.parallax_box img {
+    position: absolute;
+    width: 100%;
+}
+#countriesBox { margin-top: 23em; }
+#countriesBox img { 
+    width: 17vw;
+    max-width: 220px;    
+    position: absolute; 
+}
+#countriesBox #america {
+    top: -28%;
+    right: 15%;
+}
+#countriesBox #europe {
+    bottom: 15%;
+    right: 15%;
+}
+#countriesBox #asia {
+    top: 20%;
+    left: 9%;
+}
+#franceImg {
+    width: 90%;
+    margin-top: -130px;
+}
+
+#mask_txt>div {
+    position: relative;
+    z-index: 1;
+    overflow-y: hidden;
+}
+#mask_txt p {
+    font-family: 'SurveyorDisplay-Book-Pro', Fallback, sans-serif !important;
+    color: #2f294b;
+    font-size: clamp(3em, 6vw, 7em) !important;
+    line-height: 1em;
+    letter-spacing: 0.01em !important;
+    color: #fff;
+}
+/* ---------- Phenomenon Sec/ ---------- */
+
+
+
+
+
+
+/* ---------- /Videos section ---------- */
+#videosSec {
+    margin-top: 15em;
+    background: linear-gradient(179deg, rgba(2, 0, 36, 0) 0%, rgb(220 207 238 / 74%) 35%, rgba(0, 212, 255, 0) 100%);
+}
+#video_row>div { margin-left: 90px; }
+.video_card {
+    background-color: #9EEDF2;
+    width: clamp(230px, 22vw, 330px);
+    height: clamp(360px, 35vw, 530px);
+    padding: 0 25px 25px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+.video_card p {
+    line-height: 1.1em;
+    letter-spacing: 0.02em !important;
+    font-family: 'SurveyorDisplay-Book-Pro' !important;
+    color: #fff;
+    font-size: clamp(2em, 2.4vw, 2.2em);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+}
+.video_card svg {
+    height: 4.5em;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.video_card svg:hover { transform: scale(1.1); }
+.video_card:nth-child(1) { background-image: url('https://monatglobal.com/wp-content/uploads/2023/05/Marie-Lou-Beaupre-min.jpg'); }
+.video_card:nth-child(2) { background-image: url('https://monatglobal.com/wp-content/uploads/2023/05/Melissa-Boucher-min.jpg'); }
+.video_card:nth-child(3) { background-image: url('https://monatglobal.com/wp-content/uploads/2023/05/Joanie-Simard-min.jpg'); }
+.video_card:nth-child(4) { background-image: url('https://monatglobal.com/wp-content/uploads/2023/05/Josiane-Jean-min.jpg'); }
+.video_card:nth-child(5) { background-image: url('https://monatglobal.com/ca/wp-content/uploads/sites/5/2023/04/Cristina-Gavian.jpg'); }
+.video_card:nth-child(6) { background-image: url('https://monatglobal.com/wp-content/uploads/2023/05/ANTONIA-DUGGAN.jpg'); }
+.video_card:nth-child(7) { background-image: url('https://monatglobal.com/wp-content/uploads/2023/05/Lourdes-Del-Valle-monateffect.jpg'); }
+.video_card:nth-child(8) { background-image: url('https://monatglobal.com/wp-content/uploads/2023/05/Eileen-Stauffer_monateffect.jpg'); }
+.video_card:nth-child(1):before { background: linear-gradient(0deg, rgba(64, 56, 108, 1) 15%, rgba(255, 255, 255, 0) 40%); }
+.video_card:nth-child(2):before { background: linear-gradient(0deg, rgba(144, 101, 193, 1) 15%, rgba(255, 255, 255, 0) 40%); }
+.video_card:nth-child(3):before { background: linear-gradient(0deg, rgba(35, 93, 117, 1) 15%, rgba(255, 255, 255, 0) 40%); }
+.video_card:nth-child(4):before { background: linear-gradient(0deg, rgba(64, 56, 108, 1) 15%, rgba(255, 255, 255, 0) 40%); }
+.video_card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video_row div:hover { transform: scale(1.1); }
+/* ---------- Videos section/ ---------- */
+
+
+/* ---------- /Prefooter section ---------- */
+#lastSec {
+    width: 55%;
+    padding: 13em 0 5em;
+}
+#lastSec .surveyor_book_pro_title { font-size: clamp(2.5em, 5vw, 5em) !important; }
+/* ---------- Prefooter section/ ---------- */
+
+/* ----------------- Footer ----------------*/
+#footerMonat {
+    background-color: #2E2A4A;
+    padding-top: 5em;
+}
+
+#footerMonat hr{
+    display: block;
+    width: 100%;
+    border-color: #524e69;
+    border-width: 2px;
+    margin: 20px 0;
+}
+
+#footerMonat>div:nth-child(2),
+#footerMonat>div:last-child>div,
+.ig_feed {
+    max-width: 1500px;
+}
+
+#footerMonat>div:last-child {
+    border-top: 2px solid #57546e;
+    margin-top: 4em;
+}
+
+#footerMonat p,
+#footerMonat a {
+    color: #fff !important;
+}
+
+#footerMonat p:not(.monatSlogan):not(.footer_subtitle),
+#footerMonat a {
+    font-size: 1.3rem;
+    font-family: 'SuisseIntl-Light', Fallback, sans-serif;
+    text-decoration: none !important;
+    letter-spacing: 0.13rem;
+    margin-bottom: 0.7rem;
+    display: inline-block;
+
+}
+
+#footerMonat .monatSlogan {
+    font-size: 3.5rem;
+    font-family: 'SurveyorDisplay-Book-Pro';
+    line-height: 1.1em;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+}
+
+#footerMonat .footer_subtitle {
+    font-size: 3rem;
+    font-family: 'SurveyorDisplay-Book-Pro';
+    line-height: 1.1em;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+}
+
+#logosFooter #bunny {
+    width: min(60%, 18rem);
+    max-width: 18rem;
+    margin-right: 2rem;
+}
+
+#logosFooter #bunny img {
+    width: 100%;
+    height: 100%;
+}
+
+#logosFooter #inc,
+#logosFooter #dsa {
+    width: min(21%, 8rem);
+    margin-right: 2rem;
+}
+
+.p_medium_footer {
+    font-family: "SuisseIntl-Regular";
+}
+
+.f_col_1 .p_medium_footer>span {
+    margin: 0 0.5rem;
+}
+
+.f_col_2 ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+#footerMonat #txt_copyright {
+    font-size: 1rem;
+}
+
+#footerMonat .social_row {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+#footerMonat .social_icons {
+    width: 1.6em;
+    margin-left: 1.1em;
+}
+
+#support_row {
+    display: grid;
+    column-gap: 5%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#support_row.second p {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width:950px) {
+
+    #footerMonat>.col_80,
+    .ig_feed {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .sbi_lightbox {
+        height: auto;
+        margin-top: 0px;
+        align-items: flex-start;
+        width: 80%;
+        left: 10% !important;
+    }
+
+    .sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-dataContainer {
+        height: auto;
+        padding: 25px 20px 30px;
+    }
+
+    .f_col_1 .p_medium_footer {
+        display: flex;
+    }
+
+    #support_row {
+        display: grid;
+        gap: 5%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #logosFooter #bunny,
+    #logosFooter #inc,
+    #logosFooter #dsa {
+        width: auto;
+        height: 4rem;
+    }
+
+    #footerMonat>div:last-child {
+        padding-bottom: 1rem;
+    }
+
+    .f_col_2 {
+        margin-top: 0.5rem !important;
+    }
+
+    #footerMonat .monatSlogan {
+        font-size: 3rem;
+    }
+
+    .footer_subtitle {
+        margin-top: 1.5rem;
+        font-size: 2.5rem;
+    }
+
+}
+
+/* ---------- /footer ---------- */
+
+
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+    #video_row { transform: translateX(50%); }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .margin_mobile {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: calc(100% - 60px) !important;
+    }
+
+    #welcomeSec>div {
+        position: relative;
+        height: 80vh;
+    }
+    #welcomeSec>div>div { height: 100%; }
+    #welcomeSec>div>div:first-child { z-index: 1; }
+
+    #gallery_intro>div>img:last-child {
+        position: absolute;
+        width: 40vw;
+        bottom: 0px;
+        right: 10vw;
+    }
+
+    #gallery_intro>img {
+        width: 60%;
+        height: 90%;
+    }
+
+    #panels_container {
+        height: 55vh;
+        margin-right: 25px;
+    }
+
+    #panels_container .panel {
+        padding: 30px;
+        min-width: auto !important;
+    }
+
+    #panels_container .panel.img_panel { width: 70vw; }
+
+    #panels_container .panel.text_panel { width: 90vw; }
+
+    #ingredientsSec h3 { margin: 13vh auto; }
+    #ingredientsSec img { min-width: 25%; }
+
+    #phenomenonSec { padding-top: 5em; }
+
+    #parallax_container { margin-top: 4em; }
+
+    .parallax_box.left,
+    .parallax_box.right+img {
+        height: 30em;
+    }
+
+    #countriesBox { margin-top: 15em; }
+    #countriesBox img { min-width: 25vw; }
+    #countriesBox #america, #countriesBox #europe { right: 0; }
+    #countriesBox #asia { left: 0; }
+
+    #franceImg { margin-top: -50px; }
+
+    #videosSec { margin-top: 5em; }
+
+    #lastSec { padding-top: 5em; }
+}
+
