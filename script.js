@@ -196,6 +196,7 @@ ScrollTrigger.create({
     end: "bottom 40%",
     scrub: 1,
     animation: tlGradPanels,
+    markers: { startColor: "orange", endColor: "purple", fontSize: "12px" },
 })
 
 // 2014 stroke
