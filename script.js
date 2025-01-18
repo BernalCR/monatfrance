@@ -302,7 +302,7 @@ const commonScrollTrigger = {
     start: "right left",
     end: "left 50%",
     scrub: 1.2,
-      markers: { startColor: "orange", endColor: "purple", fontSize: "12px" },
+      // markers: { startColor: "orange", endColor: "purple", fontSize: "12px" },
 };
 
 const animationsCardsVideos = [
