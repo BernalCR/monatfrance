@@ -1,4 +1,4 @@
-console.log("hola")
+console.log("ho")
 // gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 // ScrollTrigger.normalizeScroll(true)
 
@@ -193,8 +193,8 @@ tlGradPanels.to("#horizontalSec", { backgroundImage: "linear-gradient(0deg, rgba
 
 ScrollTrigger.create({
     trigger: "#panels_container",
-    start: "center 80%",
-    end: "bottom 40%",
+    start: "center",
+    end: "bottom",
     scrub: 1,
     animation: tlGradPanels,
     markers: { startColor: "orange", endColor: "purple", fontSize: "12px" },
