@@ -1,3 +1,4 @@
+console.log("hola")
 // gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 // ScrollTrigger.normalizeScroll(true)
 
