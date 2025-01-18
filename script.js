@@ -1,4 +1,4 @@
-console.log("ho")
+console.log("hol")
 // gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 // ScrollTrigger.normalizeScroll(true)
 
@@ -151,6 +151,7 @@ ScrollTrigger.create({
     end: "bottom 0%",
     animation: tlSlogan,
     scrub: 1
+    markers: { startColor: "orange", endColor: "purple", fontSize: "12px" },
 })
 
 
@@ -197,7 +198,6 @@ ScrollTrigger.create({
     end: "bottom",
     scrub: 1,
     animation: tlGradPanels,
-    markers: { startColor: "orange", endColor: "purple", fontSize: "12px" },
 })
 
 // 2014 stroke
