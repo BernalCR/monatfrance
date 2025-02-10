@@ -151,7 +151,7 @@ ScrollTrigger.create({
     end: "bottom 0%",
     animation: tlSlogan,
     scrub: 1,
-    markers: { startColor: "orange", endColor: "purple", fontSize: "12px" },
+    // markers: { startColor: "orange", endColor: "purple", fontSize: "12px" },
 })
 
 
