@@ -183,6 +183,7 @@ gsap.to(panelsContainer, {
         start: "center center",
         end: endHScroll,
         scrub: 0.8,
+        markers: { startColor: "orange", endColor: "purple", fontSize: "12px" },
     }
 });
 
